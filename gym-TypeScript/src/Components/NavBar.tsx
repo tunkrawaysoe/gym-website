@@ -1,11 +1,16 @@
 import { useState } from 'react';
 import Logo from '@/assets/logo.png';
 import Link from '@/Components/Link';
+import { SelectedPage } from '@/Shared/type';
 
-type Props = {};
 
-const NavBar = (props: Props) => {
-  const [selectedPage, setSelectedPage] = useState("home");
+type Props = {
+  selectedPage : SelectedPage;
+  setSelectedPage : (value : SelectedPage) => void;
+  
+};
+
+const NavBar = ({selectedPage,setSelectedPage}: Props) => {
   const flexBetween = "flex items-center justify-between";
 
   return (
