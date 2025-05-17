@@ -1,12 +1,10 @@
 import Logo from '@/assets/logo.png';
-import Link from '@/Components/Link';
+import Link from './Link';
 import { SelectedPage } from '@/Shared/type';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { useState } from 'react';
 import { Bars3Icon,XMarkIcon } from '@heroicons/react/16/solid';
 import ActionButton from '@/Shared/ActionButton';
-
-
 
 type Props = {
   selectedPage : SelectedPage;
@@ -78,12 +76,12 @@ const NavBar = ({selectedPage,setSelectedPage}: Props) => {
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-gray-400" />
+              <XMarkIcon className="h-7 text-gray-400" />
             </button>
           </div>
 
           {/* MENU ITEMS */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+          <div className="ml-[33%] flex flex-col gap-10 text-xl">
             <Link
               page="Home"
               selectedPage={selectedPage}
