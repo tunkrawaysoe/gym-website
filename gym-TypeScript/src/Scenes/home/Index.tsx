@@ -22,11 +22,13 @@ const Home = ({setSelectedPage}: Props) => {
       {/* IMAGE AND MAIN HEADER */}
         <div className='md:flex mx-auto w-5/6 align-center justify-center md:h-5/6'>
         {/* MAIN HEADER */}
-          <div className='mt-16 md:basis-3/5 '>
+          <div className='z-10 mt-10 md:basis-3/5'>
             {/**Headers */}
-            <div className='md:-mt-1'>
-              <div>
-                <img alt='Home-page-text' src={`${HomePageText}`}/>
+            <div className='md:mt-20'>
+              <div className='relative'>
+                <div className="before:absolute before:-top-16 before:-left-20 before:z-[-1] md:before:content-evolvetext">
+                  <img alt='Home-page-text' src={`${HomePageText}`}/>
+                </div>
               </div>
               <p>
               Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
