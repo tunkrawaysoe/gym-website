@@ -44,6 +44,20 @@ const Benefits = ({ setSelectedPage }: Props) => {
             care into each and every member.
         </p>
       </div>
+
+      <div className="md:flex justify-between gap-8">
+        {benefits.map(({icon,title,description}:BenefitType)=>(
+          <Benefit
+          icon={icon}
+          title={title}
+          description={description}
+          
+          />
+
+        ))}
+
+      </div>
+      
     
     </section>
   );
