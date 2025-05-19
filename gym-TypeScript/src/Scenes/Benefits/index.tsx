@@ -2,6 +2,9 @@ import { type BenefitType } from "../../Shared/type";
 import Header from "@/Shared/Head";
 import { HomeModernIcon,UserGroupIcon,AcademicCapIcon } from "@heroicons/react/16/solid";
 import Benefit from "./Benefit";
+import Head from "@/Shared/Head";
+import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
+
 
 
 type Props = {
@@ -51,10 +54,32 @@ const Benefits = ({ setSelectedPage }: Props) => {
           icon={icon}
           title={title}
           description={description}
-          
-          />
-
+         />
         ))}
+
+      </div>
+
+      {/** Image and description */}
+      <div className="md:flex mt-6 md:mt-30 justify-between items-center gap-20">
+        {/** Image */}
+        <img src={`${BenefitsPageGraphic}`}/>
+
+        {/** Description */}
+        <div className="mt-4">
+          {/**Title */}
+          <div className="relative">
+            <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-abstractwaves">
+             <Head> MILLIONS OF HAPPY MEMBERS GETTING{" "}</Head>
+            </div>
+
+          </div>
+
+          {/**Description */}
+
+          {/**Button */}
+
+        </div>
+
 
       </div>
       
