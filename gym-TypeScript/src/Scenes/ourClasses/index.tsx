@@ -44,14 +44,13 @@ const classes: Array<ClassType> = [
   },
 ];
 
-
 type Props = {
     setSelectedPage : (value : SelectedPage) => void ;
 }
 
 const OurClasses = ({setSelectedPage}: Props) => {
   return (
-    <section id="ourclasses" className="w-full bg-gray-20 py-6">
+    <section id="ourclasses" className="w-full bg-gray-20 pt-4">
         {/**Title and description */}
         <div className="w-5/6 mx-auto">
             <Head>OUR CLASSES</Head>
@@ -62,25 +61,19 @@ const OurClasses = ({setSelectedPage}: Props) => {
             </p>
         </div>
         {/** Side Scrolling Image */}
-        <div className="my-5 w-full  overflow-y-hidden overflow-x-auto">
-          <ul className="w-[1000px] h-[350px] whitespace-nowrap ">
+        <div className="py-5 overflow-y-hidden overflow-x-auto">
+          <ul className="w-[1000px] h-[250px] whitespace-nowrap">
             {
               classes.map((item,index)=>(
                 <Class key={`${item.name}-${index}`}
                 name={item.name}
                 description={item.description}
                 image = {item.image}
-
                 />
-              
               ))
             }
-
           </ul>
-
-
         </div>
-
     </section>
   )
 }
