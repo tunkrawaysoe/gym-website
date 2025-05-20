@@ -6,7 +6,7 @@ type Props = {
 
 const Head = ({children}: Props) => {
   return (
-    <h1 className='text-3xl font-bold font-montserrat '>{children}</h1>
+    <h1 className='text-2xl font-bold font-montserrat '>{children}</h1>
   )
 }
 

@@ -36,7 +36,7 @@ const benefits: Array<BenefitType> = [
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section className="mx-auto w-5/6 py-20 h-full">
+    <section className="mx-auto w-5/6 py-20 min-h-full">
       {/**Header */}
       <div className=" md:w-3/5 md:my-5">
         <Header>
