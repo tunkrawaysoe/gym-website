@@ -27,8 +27,8 @@ const ContactUs = () => {
   };
 
   return (
-    <section id='contactus' className='w-5/6 mx-auto'>
-      <div className='md:flex md:justify-between gap-16 mt-10'>
+    <section id='contactus' className='py-6 w-5/6 mx-auto'>
+      <div className='md:flex md:justify-between gap-16 '>
         {/* Heading */}
         <div className='md:w-3/5'>
           <Head>
