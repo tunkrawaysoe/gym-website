@@ -50,7 +50,7 @@ type Props = {
 
 const OurClasses = ({setSelectedPage}: Props) => {
   return (
-    <section id="ourclasses" className="w-full bg-gray-20 pt-4">
+    <section id="ourclasses" className="w-full bg-gray-20 py-7">
         {/**Title and description */}
         <div className="w-5/6 mx-auto">
             <Head>OUR CLASSES</Head>

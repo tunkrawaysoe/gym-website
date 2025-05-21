@@ -5,7 +5,6 @@ import Home from '@/Scenes/home';
 import Benefits from '@/Scenes/Benefits';
 import OurClasses from "@/Scenes/ourClasses";
 import ContactUs from "@/Scenes/contactUs";
-ContactUs
 
 function App() {
   const [selectedPage,setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
